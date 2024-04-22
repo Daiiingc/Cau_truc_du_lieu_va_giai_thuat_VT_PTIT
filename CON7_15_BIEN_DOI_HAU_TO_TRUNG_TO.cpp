@@ -10,23 +10,23 @@ int main()
 		string s;
 		cin >> s;
 		stack<string> st;
-		for(int i = s.size() - 1; i >= 0; i--)
+		for(int i = 0; i <= s.size() - 1; i++)
 		{
+			string temp = "";
 			if(s[i] == '+' || s[i] == '-' || s[i] == '*' || s[i] == '/')
 			{
-				string temp1 = st.top();
+				string t1 = st.top();
 				st.pop();
-				string temp2 = st.top();
+				string t2 = st.top();
 				st.pop();
-				string temp = temp1 + temp2 + s[i];
+				temp = '(' + t2 + s[i] + t1 + ')';
 				st.push(temp);
-			}	
+			}
 			else
 			{
-				string temp = "";
-				st.push(temp + s[i]);	
-			}	
+				st.push(temp + s[i]);
+			}
 		}
-		cout << st.top() << "\n";
+		cout << st.top() << '\n';
 	}
-}	
+}

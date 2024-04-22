@@ -42,4 +42,4 @@ int main()
 //bài 1 stack/queue
 //bài 2 graph
 //bài 3 tree
-//2 bài còn lại là bài giải thuật(tham lam, chia để trị, sinh, quay lui)
+//2 bài còn lại là bài giải thuật(tham lam, chia để trị, sinh, quay lui, qhd)
